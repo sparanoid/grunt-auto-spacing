@@ -1,7 +1,7 @@
 # grunt-auto-spacing
 [![Build Status](https://api.travis-ci.org/sparanoid/grunt-auto-spacing.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-auto-spacing)
 
-> A grunt task which adds CSS classes for paragraphs with leading quotes in HTML
+> A grunt task which adds spaces between Chinese characters and English words, powered by [huei90/pangu.node](https://github.com/huei90/pangu.node).
 
 ## Getting Started
 
@@ -28,15 +28,6 @@ In your project's Gruntfile, add a section named `auto_spacing` to the data obje
 ```js
 grunt.initConfig({
   auto_spacing: {
-    options: {
-      elements: '*',
-      regex: /「|『|“/,
-      class: 'leading-indent-fix',
-      ignoreClass: 'no-lq',
-      addStyle: false,
-      addStyleOffset: '-.4em',
-      verbose: true
-    },
     all: {
       files: {
         'dest-index.html': 'source-index.html',
@@ -45,153 +36,6 @@ grunt.initConfig({
   },
 });
 ```
-
-### Options
-
-#### elements
-
-Type: `String`
-Default: `'*'`
-
-Elements to check, you can define multiple elements by comma-separated values.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        elements: 'p, li'
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-#### regex
-
-Type: `String`
-Default: `/「|『|“/`
-
-Symbols to test, in regex format.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        regex: /「|『|“|‘/
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-#### class
-
-Type: `String`
-Default: `'leading-indent-fix'`
-
-Custom CSS class.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        class: 'lq-fix'
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-#### ignoreClass
-
-Type: `String`
-Default: `'no-lq'`
-
-Elements to be ignored, affected to all descendants.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        ignoreClass: 'no-lq'
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-#### addStyle
-
-Type: `Boolean`
-Default: `false`
-
-Add styles automatically for matched elements.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        addStyle: true
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-#### addStyleOffset
-
-Type: `String`
-Default: `'-.4em'`
-
-Change default styles offset.
-
-```js
-grunt.initConfig({
-  auto_spacing: {
-    all: {
-      options: {
-        addStyleOffset: '-.39em'
-      },
-      files: {
-        'dest-index.html': 'source-index.html',
-      },
-    },
-  },
-});
-```
-
-Result:
-
-```html
-<p class="leading-indent-fix" style="text-indent: -.39em;">&#x201C;This should be replaced.&#x201D;</p>
-```
-
-#### verbose
-
-Type: `Boolean`
-Default: `true`
-
-Verbose logging.
 
 ## Contributing
 
