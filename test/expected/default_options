@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+
+    <style>
+    body {
+      margin: 20px;
+      border: 1px solid rgba(0, 0, 0, .5);
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>grunt-auto-spacing</h1>
+
+    <p>應該 nothing happen</p>
+
+    <p>在 LeanCloud 上，數據存儲是圍繞 <code>AVObject</code> 進行的。</p>
+
+    <p>今天出去買菜花了 5000 元。</p>
+
+    <p>今天是 233°的高溫。新 MacBook Pro 有 15% 的 CPU 性能提升。</p>
+
+    <script>console.log("<p>“This should not be replaced.”</p>");</script>
+    <script>console.log("<p>‘This should not be replaced.’</p>");</script>
+  </body>
+</html>
