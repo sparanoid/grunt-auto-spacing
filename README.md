@@ -1,5 +1,7 @@
 # grunt-auto-spacing
 [![Build Status](https://api.travis-ci.org/sparanoid/grunt-auto-spacing.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-auto-spacing)
+[![npm Version](https://img.shields.io/npm/v/grunt-auto-spacing.svg)](https://www.npmjs.com/package/grunt-auto-spacing)
+[![npm Downloads](https://img.shields.io/npm/dm/grunt-auto-spacing.svg)](https://www.npmjs.com/package/grunt-auto-spacing)
 
 > A grunt task which adds spaces between Chinese characters and English words, powered by [huei90/pangu.node](https://github.com/huei90/pangu.node).
 
