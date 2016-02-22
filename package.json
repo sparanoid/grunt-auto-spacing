@@ -48,5 +48,7 @@
     "html",
     "js"
   ],
-  "contributors": []
+  "contributors": [
+    "gruntjs-updater <updater@gruntjs.com>"
+  ]
 }
