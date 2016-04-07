@@ -46,6 +46,7 @@
     "js"
   ],
   "contributors": [
+    "greenkeeperio-bot <support@greenkeeper.io>",
     "gruntjs-updater <updater@gruntjs.com>"
   ]
 }
