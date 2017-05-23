@@ -1,4 +1,6 @@
 # grunt-auto-spacing
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/grunt-auto-spacing.svg)](https://greenkeeper.io/)
 [![Build Status](https://api.travis-ci.org/sparanoid/grunt-auto-spacing.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-auto-spacing)
 [![npm Version](https://img.shields.io/npm/v/grunt-auto-spacing.svg)](https://www.npmjs.com/package/grunt-auto-spacing)
 [![npm Downloads](https://img.shields.io/npm/dm/grunt-auto-spacing.svg)](https://www.npmjs.com/package/grunt-auto-spacing)
